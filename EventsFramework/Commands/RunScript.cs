@@ -13,13 +13,13 @@ namespace EventsFramework.Commands
 
         public string Description { get; } = "Run an event script";
 
-        public string perm { get; } = "eventsframework.runscript";
+        public string Perm { get; } = "eventsframework.runscript";
 
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
-            if (!sender.CheckPermission(perm))
+            if (!sender.CheckPermission(Perm))
             {
-                response = $"You do not have the right permission to use this command, permission required: {perm}";
+                response = $"You do not have the right permission to use this command, permission required: {Perm}";
                 return false;
             }
 
