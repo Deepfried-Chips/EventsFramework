@@ -5,6 +5,7 @@ using NWAPIPermissionSystem;
 namespace EventsFramework.Commands
 {
     [CommandHandler(typeof(RemoteAdminCommandHandler))]
+    [CommandHandler(typeof(GameConsoleCommandHandler))]
     public class RunScript : ICommand
     {
         public string Command { get; } = "runscript_ef";
