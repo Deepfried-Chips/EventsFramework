@@ -12,6 +12,7 @@ namespace EventsFramework
     {
         public static Plugin Singleton { get; private set; }
         
+        [PluginPriority(LoadPriority.Medium)]
         [PluginEntryPoint("EventsFramework", "1.0.0", "Enhancing events with the help of lua", "Deepfried-Chips")]
         private void LoadPlugin()
         {
